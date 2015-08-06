@@ -1,7 +1,7 @@
 pathToRegexp = require('path-to-regexp')
 module.exports =
 class Router
-  constructor: (opts) ->
+  constructor: (opts = {}) ->
     @hash = opts.hash ? false
     @_routes = []
 
